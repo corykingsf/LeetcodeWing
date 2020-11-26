@@ -17,6 +17,7 @@ public class SlidingWindow_MaxSizeKSubarr {
             System.out.println(i + " ");
         }
     }
+    // deque里存的是之后有可能成为最大值的元素
     private static List<Integer> getMaxVals(int[] nums, int k) {
         // sanity check
         List<Integer> res = new ArrayList<>();
