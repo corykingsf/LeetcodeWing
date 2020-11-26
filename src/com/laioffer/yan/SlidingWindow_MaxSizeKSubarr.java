@@ -18,6 +18,7 @@ public class SlidingWindow_MaxSizeKSubarr {
         }
     }
     // deque里存的是之后有可能成为最大值的元素
+    // 单调（递减）栈的性质，对于每个元素，记录左边比它大的最近的那个数，和右边第一个比它大的数
     private static List<Integer> getMaxVals(int[] nums, int k) {
         // sanity check
         List<Integer> res = new ArrayList<>();
